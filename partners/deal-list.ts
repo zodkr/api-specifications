@@ -1,3 +1,5 @@
+const url = 'https://zod.kr/partners-api/deal-list';
+
 type boardId = 'deal' | 'deal_event' | 'deal_partner';
 
 interface Request {
