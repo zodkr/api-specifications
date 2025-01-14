@@ -15,7 +15,7 @@ interface Response {
   }
   createdAt: Date
   metadata: {
-    provider: '쿠팡' | '네이버' | '지마켓' | '옥션' | '11번가' | '스팀' | '기타'
+    provider: String
     price: String
     shippingFee: String
     status: 'open' | 'close'
