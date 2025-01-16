@@ -11,13 +11,14 @@ interface Response {
   id: Number
   title: String
   url: String
+  category: String
   count: {
     comment: Number
     vote: Number
   }
   createdAt: Date
   metadata: {
-    provider: String
+    platform: String
     price: String
     shippingFee: String
     status: 'open' | 'close'
