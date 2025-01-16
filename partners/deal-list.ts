@@ -4,7 +4,7 @@ type boardId = 'deal' | 'deal_event' | 'deal_partner';
 
 interface Request {
   page: Number
-  include: boardId | [boardId]
+  include: boardId | String
 }
 
 interface Response {
