@@ -12,6 +12,7 @@ interface DocumentItem {
   id: Number
   title: String
   url: String
+  thumbnail: String
   category: String
   count: {
     comment: Number
