@@ -1,13 +1,14 @@
 const url = 'https://zod.kr/partners-api/deal-list';
 
-type boardId = 'deal' | 'deal_event' | 'deal_partner';
+type BoardId = 'deal' | 'deal_event' | 'deal_partner'
+type APIVersion = String
 
 interface Request {
   page: Number
-  include: boardId | String
+  include: BoardId | String
 }
 
-interface Response {
+interface DocumentItem {
   id: Number
   title: String
   url: String
@@ -23,4 +24,11 @@ interface Response {
     shippingFee: String
     status: 'open' | 'close'
   }
+}
+
+interface Response {
+  error: Number
+  message: String
+  APIVersion: String
+  data?: Array<DocumentItem>
 }
