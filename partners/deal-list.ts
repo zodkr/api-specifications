@@ -1,4 +1,4 @@
-const url = 'https://zod.kr/partners-api/deal-list';
+const url = 'https://zod.kr/partners-api/board-deal-list';
 
 type BoardId = 'deal' | 'deal_event' | 'deal_partner'
 type APIVersion = String
