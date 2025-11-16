@@ -18,6 +18,7 @@ interface DocumentItem {
   count: {
     comment: Number
     vote: Number
+    readed: Number
   }
   createdAt: Date
   metadata: {
